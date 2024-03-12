@@ -1,0 +1,91 @@
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Шапка страницы */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.header__title {
+  margin: 0;
+}
+
+/* Навигационное меню */
+.nav {
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+.nav__list {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.nav__list li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.nav__list li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Основное содержимое страницы */
+.main-content {
+  padding: 20px;
+}
+
+/* Секции с контентом */
+.section {
+  margin-bottom: 30px; /* Увеличим расстояние между секциями */
+}
+
+.section__title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333; /* Цвет заголовка */
+}
+
+.section__content {
+  font-size: 16px;
+  line-height: 1.6; /* Межстрочный интервал для лучшей читаемости */
+  color: #555; /* Цвет текста */
+}
+
+/* Добавим стили для фона секций */
+/* Добавим стили для фона секций */
+.section:nth-child(even) {
+  background-color: #f9f9f9; /* Цвет фона для четных секций */
+}
+
+.section:nth-child(odd) {
+  background-color: #f9f9f9; /* Цвет фона для нечетных секций (сделаем одинаковым) */
+}
+
+
+/* Медиа-запросы для iPhone в портретной ориентации */
+@media only screen 
+  and (max-width: 375px)
+  and (max-height: 812px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+  /* Стили для iPhone */
+}
+
+/* Медиа-запросы для Android в портретной ориентации */
+@media only screen 
+  and (max-width: 360px)
+  and (max-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+  /* Стили для Android */
+}
